@@ -33,7 +33,7 @@ cd dls-maze-solver
 
 pip install streamlit pandas
 
-streamlit run app.py
+streamlit run maze.py
 
 🧱 Maze Format
 The maze is provided as plain text. Each line represents a row in the grid.
