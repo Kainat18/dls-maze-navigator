@@ -1,48 +1,59 @@
-🤖 Rescue Robot Path Finder using Depth-Limited Search (DLS)
-📌 Overview
-This is an interactive web application that simulates a rescue robot navigating a maze-like building to reach a trapped survivor. The robot uses Depth-Limited Search (DLS) — a variant of DFS — to explore the maze within a limited depth.
+🧠 Maze Solver using Depth-Limited Search (DLS)
+A visual maze pathfinding application built with Streamlit using the Depth-Limited Search (DLS) algorithm.
 
-The app is built with Python and Streamlit.
+📌 Project Overview
+This project simulates a robot navigating through a grid-based maze to reach a target destination using Depth-Limited Search. It visually demonstrates how search algorithms work by animating the robot's path, visited nodes, and the decision process. It represents real-world scenarios like robotic pathfinding, AI navigation, and search space pruning.
 
-⚙️ Features
-Interactive maze input using text
+🛠️ Tools & Technologies
+Python
 
-Adjustable search depth limit
+Streamlit – for interactive UI and animation
 
-Visual display of the maze and found path (if any)
+HTML/CSS (inline) – for grid visualization
 
-Color-coded cells for intuitive understanding:
+Depth-Limited Search (DLS) algorithm
 
-🟩 S (Start)
+🔍 What is Depth-Limited Search?
+A variation of Depth-First Search (DFS)
 
-🟥 G (Goal)
+Restricts the search to a predefined maximum depth
 
-⬛ # (Wall/Obstacle)
+Avoids infinite loops in cyclic or infinite graphs
 
-⚪ . (Free Path)
+Suitable for bounded search spaces where depth limits are known
 
-⭐ * (Final path)
+🎮 How It Works
+A grid maze is generated using a 2D array
 
-## 🚀 How to Run Locally
+'S' = Start, 'G' = Goal, '#' = Wall, '.' = Free path
 
-### 1. Clone the Repository
+DLS searches for a path from Start to Goal without exceeding the depth limit
 
-```bash
-git clone https://github.com/Kainat18/dls-maze-navigator
-cd dls-maze-solver
+The maze is animated in real-time using color-coded cells:
 
-pip install streamlit pandas
+🟩 Start
 
-streamlit run maze.py
+🟥 Goal
 
-🧱 Maze Format
+🟦 Visited
 
-S: Start position (Robot)
+🟨 Final Path
 
-G: Goal position (Survivor)
+⬛ Wall
 
-#: Wall (Impassable)
+🚀 Getting Started
+
+pip install streamlit
+streamlit run maze_dls.py
+Adjust the maximum search depth using the slider and press "Run DLS" to visualize the algorithm.
+
+📂 Real-World Applications
+Robot path planning
+
+Game AI (e.g. NPC movement in bounded environments)
+
+Search-limited AI systems
+
+Autonomous vehicle navigation
 
 
-🧑‍💻 Author
-Name: Kainat Farooq Munara
