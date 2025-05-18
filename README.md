@@ -36,7 +36,6 @@ pip install streamlit pandas
 streamlit run maze.py
 
 🧱 Maze Format
-The maze is provided as plain text. Each line represents a row in the grid.
 
 S: Start position (Robot)
 
@@ -44,9 +43,6 @@ G: Goal position (Survivor)
 
 #: Wall (Impassable)
 
-.: Open Path
-📸 Interface Preview
-![img_1.png](img_1.png)
 
 🧑‍💻 Author
 Name: Kainat Farooq Munara
