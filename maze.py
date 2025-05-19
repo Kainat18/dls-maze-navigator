@@ -60,6 +60,11 @@ def depth_limited_search(maze, start, goal, max_depth, placeholder):
 # Streamlit App
 def main():
     st.title("RescueBot Search (DLS)")
+    st.markdown("""
+    **Legend**  
+    🟩 Start &nbsp;&nbsp;&nbsp; 🟥 Goal &nbsp;&nbsp;&nbsp; ⬛ Wall &nbsp;&nbsp;&nbsp; ⬜ Open Path  
+    🟦 Visited &nbsp;&nbsp;&nbsp; 🟨 Final Path  
+    """)
 
     # Define a simple maze
     maze = [
